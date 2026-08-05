@@ -2,6 +2,19 @@
 
 Standardize secure pipeline scanning and centralize actionable results in Defender for DevOps.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions |
+| Services and stack | Defender for Cloud; Microsoft Security; GitHub Actions; Azure DevOps; Log Analytics |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; YAML configuration; Python validation/tests |
+
 ## Problem statement
 
 A pipeline scan request produces a tenant-scoped plan for IaC and container analysis with read-only CI permissions, secretless Azure reporting, and deterministic evidence.
